@@ -1,20 +1,13 @@
-//Kaio Rodrigues da Cunha
-//1394485
+//Kaio Rodrigues
 
 #include <iostream>
 
 using namespace std;
 
 class No{
-
 	private:
-
-		int valor;//InformaÁ„o no NÛ
-
-		No* prox; //Aponta para o prÛximo NÛ
-
-
-
+		int valor;//Informa√ß√£o no N√≥
+		No* prox; //Aponta para o pr√≥ximo N√≥
     public:
 
     	No (int valor){
@@ -65,9 +58,9 @@ class Fila{
 
 	private:
 
-	  No* frente; //NÛ na frente da Fila
+	  No* frente; //N√≥ na frente da Fila
 
-	  No* tras; //NÛ atr·s da Fila
+	  No* tras; //N√≥ atr√°s da Fila
 
 
 
@@ -83,7 +76,7 @@ class Fila{
 
 		 }
 
-       //Verifica se a Fila est· vazia
+       //Verifica se a Fila est√° vazia
 
        bool isEmpty(){
 
@@ -104,9 +97,9 @@ class Fila{
 
        void Enqueue(int info){
 
-       	  No* novo = new No(info); // CriaÁ„o de NÛ que ser· inserido
+       	  No* novo = new No(info); // Cria√ß√£o de N√≥ que ser√° inserido
 
-       	  //CondiÁ„o caso a Fila esteja Vazia
+       	  //Condi√ß√£o caso a Fila esteja Vazia
 
 		  if(isEmpty()){
 
@@ -114,7 +107,7 @@ class Fila{
 
 			tras = novo;
 
-          //CondiÁ„o caso a Fila n„o esteja vazia
+          //Condi√ß√£o caso a Fila n√£o esteja vazia
 
 		  } else{
 
@@ -126,7 +119,7 @@ class Fila{
 
 	   }
 
-	   //Remove o elemento 1 da Fila, pois Fila È FIFO
+	   //Remove o elemento 1 da Fila, pois Fila √© FIFO
 
 	   int Dequeue(){
 
@@ -150,21 +143,21 @@ class Fila{
 
 	   int Search(int info){
 
-	   	   int status = 0; //Guarda o resultado caso o elemento esteja na fila ou n„o na Fila
+	   	   int status = 0; //Guarda o resultado caso o elemento esteja na fila ou n√£o na Fila
 
-		   //CondiÁ„o caso a Fila esteja Vazia
+		   //Condi√ß√£o caso a Fila esteja Vazia
 
 		   if(frente == NULL){
 
 			 status = 0;
 
-            //CondiÁ„o caso a Fila n„o esteja vazia
+            //Condi√ß√£o caso a Fila n√£o esteja vazia
 
 		   } else{
 
 			   Fila aux;
 
-			   int guarda; //Vari·vel que vai guardar o valor eliminado da Fila
+			   int guarda; //Vari√°vel que vai guardar o valor eliminado da Fila
 
 			   while(frente!=NULL){
 
