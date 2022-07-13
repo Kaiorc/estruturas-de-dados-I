@@ -56,8 +56,7 @@ int main(){
 	topo = retiraInicio(topo);
 	topo = retiraInicio(topo);
 
-
 	imprimir(topo);
-
+    
 	return 0;
 }
