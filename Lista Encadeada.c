@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 typedef struct no{
-		int elemento;
-		struct no *prox;
+	int elemento;
+	struct no *prox;
 } no;
 
 void insere_inicio(no **topo, int ele){
@@ -20,14 +20,14 @@ void insere_inicio(no **topo, int ele){
 }
 
 no *retiraInicio(no *topo){
-		if(topo -> prox == NULL){
-		  printf("Lista ja esta vazia\n");
-			return NULL;
-	 }else{
-		  no *aux = topo -> prox;
-		  topo -> prox = aux -> prox;
-			return aux;
-		}
+	if(topo -> prox == NULL){
+		printf("Lista ja esta vazia\n");
+		return NULL;
+ 	}else{
+		no *aux = topo -> prox;
+		topo -> prox = aux -> prox;
+		return aux;
+	}
 }
 
 void imprimir(no *topo){
@@ -35,10 +35,10 @@ void imprimir(no *topo){
 	aux = topo;
 	if(aux == NULL){
 	} else{
-			do {
-				printf("%d\n", aux-> elemento );
-				aux = aux -> prox;
-			} while(aux != NULL);
+		do {
+			printf("%d\n", aux-> elemento );
+			aux = aux -> prox;
+		} while(aux != NULL);
 	}
 }
 
@@ -57,6 +57,6 @@ int main(){
 	topo = retiraInicio(topo);
 
 	imprimir(topo);
-    
+
 	return 0;
 }
